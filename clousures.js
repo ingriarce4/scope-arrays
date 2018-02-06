@@ -16,10 +16,28 @@ const saludarSilva = saludarFamilia("Silva")
  saludarArce("Silva")
  saludarArce("Juan")
 
- saludarSilva("Pedro")
- saludarSilva("Ingrid")
- saludarSilva("Silva")
- saludarSilva("Juan")
+ saludarSilva("Maria")
+ saludarSilva("Elsa")
+ saludarSilva("Ivan")
+ saludarSilva("luis")
 
  // función que me permita crear prefijos para las palabras 
+function usePrefijos (prefijo){
+	return function nuevaPalabra(palabra){
+      console.log(`${prefijo}${palabra}` )
 
+	}
+}
+const prefijoRe = usePrefijos("in")
+const prefijoIn = usePrefijos("re")
+//saludar los miembros de una familia
+
+
+ prefijoRe("Pedro")
+ prefijoRe("Ingrid")
+ 
+
+prefijoIn("Pedro")
+prefijoIn("Ingrid")
+ 
+ 
